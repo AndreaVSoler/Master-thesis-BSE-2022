@@ -1,17 +1,49 @@
-****************************************************
-**** MASTER THESIS CODE: SENEGAL FISH AGREEMENT ****
-****************************************************
+/* -------------------------------------------------------------- */
+/* MASTER THESIS CODE: SENEGAL FISH AGREEMENT                           */
+/*                                                                */
+/* Author: MICHEL DOUAIHY, ERIC DISANTO, KIMBERLY MASSA, ANDREA VIÑAS */                                    
+/* Last update: June 2022 by Andrea Viñas                 */
+/* -------------------------------------------------------------- */
+********************************************************************************
+*** WORKSPACE SET-UP ***
+********************************************************************************
 
-/* Authors: Douaihy, DiSanto, Massa, Viñas */
+	clear all
+    version 15
+	set more off
+	capture program drop _all
+	capture log close                                                               
+	set seed 1234
+
+/* 
+        To run this file on your system:
+                Copy Paste the IF HOSTNAME If below, using your own hostname that you might find with the di code below
+				Once you add an IF statement with your own hostname, it will work for all users listed.
+				 
+        
+*/
+
+
+	local hostname "`c(hostname)'"
+	di "`c(hostname)'"
+	
+		
+		if "`hostname'" == "DESKTOP-MRS09FP" {
+		global dir "C:\Users\Andrea\Desktop\Master Thesis\Data" 
+		
+		}	
+
+	cd $dir
 
 
 //* aggregate the 12-13, 14, 15, 16, 17 Household members datasets *//
 
-use "C:\Users\Andrea\Desktop\Children 2017.DTA"
-append using "C:\Users\Andrea\Desktop\Children 2016.DTA"
-append using "C:\Users\Andrea\Desktop\Children 2015.DTA"
-append using "C:\Users\Andrea\Desktop\Children 2014.DTA"
-append using "C:\Users\Andrea\Desktop\Children 2012-2013.DTA"
+use "Children 2017.DTA"
+append using "Children 2016.DTA"
+append using "Children 2015.DTA"
+append using "Children 2014.DTA"
+append using "Children 2012-2013.DTA"
+
 
 //* rename some variables *//
 
@@ -376,4 +408,4 @@ outreg2 using heterogeneityshortrun.xls
 //higher//
 ologit Kid_Anemialevel i.Treatment##i.Post  i.Iron_pills_pregnancy i.Sex_child i.Urban_Rural i.Gave_child_fish i.Wealth_index_quintile i.Region if Mother_educlvl==3 & Year==2014 | Year==2015, vce(cl Cluster_2017)
 
-outreg2 using heterogeneityshortrun.xls
+outreg2 using "heterogeneityshortrun.xls"
