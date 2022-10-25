@@ -4,3 +4,5 @@ On November 20 in 2014, Senegal signed a new agreement with the EU allowing for 
 to their non-coastal counterparts in response to the policy. Concretely, meanwhile after the agreement in 2015 the probability of children in the whole country to have worse levels of anemia was decreasing, when we isolate the effect for the coastal area we found an opposite trend. Overall, we follow the previous literature work on the negative effects of fish agreements in the absence of the proper public policies to support socioeconomically the inhabitants.
 
 Key words: Senegal, Anemia, Children, Fish, SFPA, Difference-in-Difference, Multinomial Logit
+
+Authors: Eric DiSanto, Michel Douaihy, Kimberly Massa Núñnez, Andrea Viñas Soler
