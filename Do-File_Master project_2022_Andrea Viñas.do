@@ -1,7 +1,7 @@
 /* -------------------------------------------------------------- */
 /* MASTER THESIS CODE: SENEGAL FISH AGREEMENT                           */
 /*                                                                */
-/* Author: MICHEL DOUAIHY, ERIC DISANTO, KIMBERLY MASSA, ANDREA VIÑAS */                                    
+/* Author: ERIC DISANTO, MICHEL DOUAIHY, KIMBERLY MASSA, ANDREA VIÑAS */                                    
 /* Last update: June 2022 by Andrea Viñas                 */
 /* -------------------------------------------------------------- */
 ********************************************************************************
