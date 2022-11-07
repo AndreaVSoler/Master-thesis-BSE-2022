@@ -5,4 +5,4 @@ to their non-coastal counterparts in response to the policy. Concretely, meanwhi
 
 Key words: Senegal, Anemia, Children, Fish, SFPA, Difference-in-Difference, Multinomial Logit
 
-Authors: Eric DiSanto, Michel Douaihy, Kimberly Massa Núñnez, Andrea Viñas Soler
+Authors: Eric DiSanto, Michel Douaihy, Kimberly Massa Núñez, Andrea Viñas Soler
